@@ -17,6 +17,18 @@ A modern e-commerce frontend built with React and Vite, designed to work with a 
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
 
+### Docker setup
+Build an image with
+```shell
+docker build -t vite-e-commerce .
+```
+Run a container with
+```shell
+docker run -p 5189:5173 --name vite-container vite-e-commerce
+```
+The container will be accessible through
+http://localhost:5189/
+
 ## Frontend Architecture
 
 The application follows a component-based architecture with the following structure:
